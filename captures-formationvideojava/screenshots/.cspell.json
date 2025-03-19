@@ -1,0 +1,20 @@
+version https://git-lfs.github.com/spec/v1
+oid sha256:621a51a40ce64deb0c87f53faa74c7c1593820ab2c4dc60af88303e1127afe04
+size 260
+{
+  "version": "0.2",
+  "language": "en,fr",
+  "words": [
+    "commentaire",
+    "JavaFX",
+    "ligne",
+    "motTechnique",
+    "plusieurs",
+    "SpringBoot"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "*.md"
+  ]
+}

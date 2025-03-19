@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "language": "en,fr",
+  "words": [
+    "commentaire",
+    "JavaFX",
+    "ligne",
+    "motTechnique",
+    "plusieurs",
+    "SpringBoot"
+  ],
+  "ignorePaths": ["**/node_modules/**", "**/dist/**", "*.md"]
+}
