@@ -146,3 +146,95 @@ int unsignedRightShift = a >>> 1; // 2
 ## Conclusion
 
 Les opérateurs en Java sont fondamentaux pour manipuler les données et contrôler le flux d'exécution des programmes. Une bonne compréhension de ces concepts permet d'écrire un code plus efficace et plus performant.
+
+# 📌 Raccourcis des Opérateurs Numériques en Java
+
+En Java, les **opérateurs numériques** peuvent être utilisés avec des raccourcis pour optimiser et simplifier l'écriture du code.
+
+---
+
+## 1️⃣ Opérateurs d'affectation avec raccourci
+
+Ces opérateurs combinent une opération mathématique avec une affectation (`=`).
+
+| Opérateur             | Exemple long | Raccourci équivalent |
+| --------------------- | ------------ | -------------------- |
+| `+=` (Addition)       | `x = x + 5;` | `x += 5;`            |
+| `-=` (Soustraction)   | `x = x - 3;` | `x -= 3;`            |
+| `*=` (Multiplication) | `x = x * 2;` | `x *= 2;`            |
+| `/=` (Division)       | `x = x / 4;` | `x /= 4;`            |
+| `%=` (Modulo)         | `x = x % 2;` | `x %= 2;`            |
+
+---
+
+## 2️⃣ Opérateurs d'incrémentation et décrémentation
+
+Ces opérateurs permettent d'augmenter ou de diminuer une valeur de 1.
+
+| Opérateur             | Exemple long | Raccourci équivalent |
+| --------------------- | ------------ | -------------------- |
+| `++` (Incrémentation) | `x = x + 1;` | `x++;` ou `++x;`     |
+| `--` (Décrémentation) | `x = x - 1;` | `x--;` ou `--x;`     |
+
+📌 **Différence entre pré-incrémentation et post-incrémentation** :
+
+- **`x++` (post-incrémentation)** → Utilise `x`, puis l'incrémente.
+- **`++x` (pré-incrémentation)** → Incrémente `x`, puis l'utilise.
+
+```java
+int x = 5;
+System.out.println(x++); // Affiche 5, puis x devient 6
+System.out.println(++x); // x devient 7, puis affiche 7
+```
+
+---
+
+## 3️⃣ Opérateurs de comparaison
+
+Ces opérateurs retournent un **booléen** (`true` ou `false`).
+
+| Opérateur | Description       | Exemple  |
+| --------- | ----------------- | -------- |
+| `==`      | Égal à            | `x == y` |
+| `!=`      | Différent de      | `x != y` |
+| `>`       | Supérieur à       | `x > y`  |
+| `<`       | Inférieur à       | `x < y`  |
+| `>=`      | Supérieur ou égal | `x >= y` |
+| `<=`      | Inférieur ou égal | `x <= y` |
+
+---
+
+## 4️⃣ Opérateurs logiques
+
+Ils sont souvent utilisés dans les **conditions** (`if`, `while`, etc.).
+
+| Opérateur | Description | Exemple            |
+| --------- | ----------- | ------------------ | ---------- | ------- | --- | ------- |
+| `&&`      | ET logique  | `(x > 0 && y > 0)` |
+| `         |             | `                  | OU logique | `(x > 0 |     | y > 0)` |
+| `!`       | NON logique | `!(x > 0)`         |
+
+---
+
+## 5️⃣ Opérateur ternaire (`? :`)
+
+Permet d'écrire une **condition en une seule ligne**.
+
+```java
+int age = 20;
+String statut = (age >= 18) ? "Majeur" : "Mineur";
+System.out.println(statut); // Affiche "Majeur"
+```
+
+---
+
+## ✅ Résumé :
+
+✔ **Utilisez `+=`, `-=`, `*=`, `/=` pour éviter `x = x + ...`.**  
+✔ **Préférez `x++` ou `--x` pour incrémenter/décrémenter rapidement.**  
+✔ **`&&`, `||`, `!` simplifient la logique des conditions.**  
+✔ **L’opérateur ternaire `? :` rend le code plus compact.**
+
+---
+
+🎯 **Avec ces raccourcis, votre code sera plus concis et plus efficace !** 🚀
